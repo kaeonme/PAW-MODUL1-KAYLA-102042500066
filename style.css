@@ -1,0 +1,192 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #fadef6;
+    color: #ebe6e6;
+    padding: 30px;
+}
+
+/* Header & Navbar */
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(226, 225, 225, 0.05);
+    margin-bottom: 25px;
+}
+
+.site-header h1 {
+    font-size: 24px;
+    color: #111827;
+}
+
+.site-nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #4b5563;
+    font-weight: 600;
+    transition: color 0.2s;
+}
+
+.site-nav a:hover {
+    color: #2563eb;
+}
+
+/* Mid Section */
+.mid-section {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 50px 40px;
+    border-radius: 16px;
+    margin-bottom: 40px;
+}
+
+.mid-section .subtitle {
+    font-size: 13px;
+    letter-spacing: 2px;
+    color: #9ca3af;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.mid-section h2 {
+    font-size: 36px;
+    margin-bottom: 12px;
+}
+
+.mid-section p {
+    color: #d1d5db;
+    margin-bottom: 24px;
+}
+
+.btn-mid {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #ffffff;
+    color: #111827;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 700;
+    transition: background 0.2s;
+}
+
+.btn-mid:hover {
+    background-color: #e5e7eb;
+}
+
+/* Catalog Header & Total Badge */
+.catalog-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.catalog-header .subtitle {
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    color: #6b7280;
+    font-weight: 700;
+}
+
+.catalog-header h2 {
+    font-size: 28px;
+    color: #111827;
+}
+
+.total-badge {
+    background-color: #ffffff;
+    padding: 10px 18px;
+    border-radius: 30px;
+    font-size: 14px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+/* Grid Layout Card Produk (Ketentuan 13 & 15) */
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 24px;
+}
+
+/* Card Styling (Ketentuan 6) */
+.card {
+    background-color: #ffffff;
+    padding: 24px;
+    border-radius: 14px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+    border: 1px solid #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+}
+
+.card h3 {
+    font-size: 20px;
+    color: #1f2937;
+    margin-bottom: 6px;
+}
+
+.category {
+    color: #6b7280;
+    font-size: 13px;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.price {
+    font-size: 18px;
+    font-weight: 700;
+    color: #059669;
+    margin-bottom: 12px;
+}
+
+.status {
+    font-size: 13.5px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.in-stock { color: #16a34a; }
+.out-of-stock { color: #dc2626; }
+
+/* Tombol Beli (Ketentuan 8 & 9) */
+.btn-buy {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background-color: #2563eb;
+    color: #ffffff;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 14px;
+    transition: background-color 0.2s;
+}
+
+.btn-buy:hover {
+    background-color: #1d4ed8;
+}
+
+.btn-buy.disabled {
+    background-color: #e5e7eb;
+    color: #9ca3af;
+    cursor: not-allowed;
+}
+
